@@ -1,12 +1,15 @@
 {
   "name": "@bossmodecg/module-clientele",
-  "version": "0.0.20",
+  "version": "0.1.1",
   "description": "A BossmodeCG module for monitoring connections to the server.",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/bossmodecg/module-clientele/issues"
   },
   "repository": "github:bossmodecg/module-clientele",
+  "files": [
+    "dist"
+  ],
   "bossmodecg": {
     "modulePath": "dist/index"
   },
@@ -14,7 +17,7 @@
     "lodash": "^4.17.4"
   },
   "peerDependencies": {
-    "@bossmodecg/core": "^0.0.20"
+    "@bossmodecg/core": "^0.1.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.0",
