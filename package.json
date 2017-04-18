@@ -1,0 +1,41 @@
+{
+  "name": "@bossmodecg/module-clientele",
+  "version": "0.0.10",
+  "description": "A BossmodeCG module for monitoring connections to the server.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bossmodecg/module-clientele/issues"
+  },
+  "repository": "github:bossmodecg/module-clientele",
+  "bossmodecg": {
+    "modulePath": "dist/index"
+  },
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "lodash": "^4.17.4"
+  },
+  "peerDependencies": {
+    "@bossmodecg/core": "^0.0.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-preset-es2017": "^6.22.0",
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb": "latest",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2 || ^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "husky": "^0.13.2",
+    "jest": "^19.0.2"
+  },
+  "scripts": {
+    "test": "eslint src && jest --coverage",
+    "build": "babel src -d dist",
+    "prepublish": "npm run build",
+    "precommit": "npm run test",
+    "prepush": "npm run test"
+  }
+}
